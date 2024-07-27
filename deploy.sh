@@ -17,8 +17,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# if deploying to https://yourusername.github.io
-git push -f git@github.com:yourusername/yourusername.github.io.git master
+# if deploying to https://misaka23300.github.io
+git push -f git@github.com:misaka23300/misaka23300.github.io.git master
 
-# or if deploying to https://username.github.io/reponame
-git push -f git@github.com:username/repo.git master:gh-pages
