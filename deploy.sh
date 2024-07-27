@@ -11,7 +11,7 @@ cd .vuepress/dist
 
 # if you are deploying to a custom domain
 # be sure to add proper CNAME records to your domain 
-echo 'www.myfancydomain.com' > CNAME-record-here
+# echo 'www.myfancydomain.com' > CNAME-record-here
 
 git init
 git add -A
