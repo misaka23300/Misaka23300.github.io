@@ -1,7 +1,7 @@
 {
-  "name": "7tanda",
+  "name": "7tanda_test",
   "version": "1.0.0",
-  "description": "vue.js",
+  "description": "A VuePress project",
   "license": "MIT",
   "type": "module",
   "scripts": {
