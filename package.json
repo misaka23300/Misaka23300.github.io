@@ -1,0 +1,44 @@
+{
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress dev src",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build src",
+    "serve": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build src && pnpm dlx serve src/.vuepress/dist",
+    "img:upload": "bash scripts/upload-img.sh",
+    "fmt": "case-police . --fix && prettier --write .",
+    "fmt:check": "case-police . && prettier --check ."
+  },
+  "author": "Nyakku Shigure",
+  "license": "CC-BY-NC-SA-4.0",
+  "packageManager": "pnpm@9.6.0",
+  "dependencies": {
+    "@maginapp/vuepress-plugin-katex": "^1.0.11",
+    "@vuepress/plugin-active-header-links": "^1.9.10",
+    "@vuepress/plugin-pwa": "^1.9.10",
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-cursor-effects": "^1.1.6",
+    "vuepress-plugin-dynamic-title": "^1.0.0",
+    "vuepress-plugin-feed": "^0.1.9",
+    "vuepress-plugin-go-top": "^1.0.4",
+    "vuepress-plugin-img-lazy": "^1.0.4",
+    "vuepress-plugin-meting": "^0.3.3",
+    "vuepress-plugin-ribbon": "^1.1.6",
+    "vuepress-theme-meteorlxy": "^1.9.0"
+  },
+  "devDependencies": {
+    "case-police": "^0.6.1",
+    "cross-env": "^7.0.3",
+    "prettier": "^3.1.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "vue": "2.6.14",
+      "vue-server-renderer": "2.6.14",
+      "vue-template-compiler": "2.6.14"
+    },
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/core"
+      ]
+    }
+  }
+}
